@@ -1,0 +1,7 @@
+#!@GUILE@ \
+-e main -s
+!#
+
+(use-modules (knuth))
+
+(define (main args) (vm-main args))
