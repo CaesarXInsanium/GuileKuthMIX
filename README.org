@@ -105,3 +105,7 @@ top of the file this has to go.
 #+end_example
 
 and of course any other flags can be added here.
+
+- BIG NOTE DO NOT USE HALL SCAN and then HALL CLEAN for it deletes bullshit
+- if all else fails there is always git
+- always do a git commit before running =hall clean -x=

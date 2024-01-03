@@ -29,6 +29,8 @@
               ((in-file "mixasm") (in-file "mixvm")))))
          (documentation
            ((directory "doc" ((texi-file "knuth")))
+            (org-file "README")
+            (text-file "README.org")
             (text-file "COPYING")
             (text-file "HACKING")
             (symlink "README" "README.org")))
