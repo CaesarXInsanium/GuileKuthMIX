@@ -3,7 +3,7 @@
 
 * Purpose
 
-Third attempt at creating a library for dealing with the fictional machine known
+Fourth attempt at creating a library for dealing with the fictional machine known
 as the MIX machine that is explained in the book series "Art of Computer Programming".
 
 This will be done in the GNU Guile programming language. It is the only language

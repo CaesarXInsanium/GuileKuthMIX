@@ -33,6 +33,7 @@
             (text-file "README.org")
             (text-file "COPYING")
             (text-file "HACKING")
+            (text-file "TAGS")
             (symlink "README" "README.org")))
          (infrastructure
            ((scheme-file "hall")
