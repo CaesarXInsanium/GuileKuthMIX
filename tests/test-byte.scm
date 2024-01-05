@@ -6,25 +6,26 @@
 (define a (make-byte 1))
 ;; is this a byte object?
 (test-assert (byte? a))
-
 (test-end "mixbyte")
+
 ;; bits have to be defined in this specific syntax
 (test-begin "selector")
-(define b (byte 0 1 0 1 0 1))
 
+(define b (byte #*101010))
+(test-assert (bitvector? b))
 (test-assert (byte? b))
 
-(test-equal 0 (bit0 b))
-(test-equal 1 (bit1 b))
-(test-equal 0 (bit2 b))
-(test-equal 1 (bit3 b))
-(test-equal 0 (bit4 b))
-(test-equal 1 (bit5 b))
+(test-assert (bit0 b))
+(test-assert (not (bit1 b)))
+(test-assert (bit2 b))
+(test-assert (not (bit3 b)))
+(test-assert (bit4 b))
+(test-assert (not (bit5 b)))
+
 (test-end "selector")
 
 (test-begin "compare")
-(define c (byte 1 0 0 0 1 1))
-(define d (byte 1 0 0 0 1 1))
+(define c (byte #*101010))
+(define d (byte "101010"))
 (test-assert (byte=? c d))
 (test-end "compare")
-

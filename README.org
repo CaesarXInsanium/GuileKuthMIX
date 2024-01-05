@@ -56,6 +56,8 @@ more of a pain.
 - =make-word= generate MIX Word plus the sign bit
 - =subfield= takes value F, \(F = 8*L + R \) or pair denoting L and R
 
+I have found the existance of some functions that make stuff easier
+
 *** CPU
 
 Constains registers which are just words.

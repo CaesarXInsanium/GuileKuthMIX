@@ -13,7 +13,7 @@
                 (byte 0 1 0 1 0 1)
                 (byte 0 1 0 1 0 1)
                 (byte 0 1 0 1 0 1)
-                (byte 0 1 0 1 0 1)
+                (byte 1 1 0 1 0 1)
                 (byte 1 0 1 0 1 0)))
 (define c (word 0
                 (byte 0 1 0 1 0 1)
